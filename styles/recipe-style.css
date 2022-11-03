@@ -1,1 +1,136 @@
-/* Style for recipe's pages */
+/* Universal Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color:rgb(46, 45, 45);
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: azure;
+}
+
+.wrapper {
+    padding:0 5vw;
+
+}
+
+ /* Flexbox Declaration */
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sticky */
+.sticky-container {
+    position: sticky;
+    top: 3rem;
+}
+
+/* Header */
+.header {
+    padding:2rem 0;
+    gap: 2rem;
+    min-width: 100%;
+}
+.header-menu {
+    gap: 1rem;
+    flex: 1 1 auto;
+}
+.menu-button {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+.nav-button {
+    min-width: 10rem;
+}
+.nav-button:active, .nav-button:hover {
+    background-color: rgba(0, 0, 200, 0.5);
+    transition-duration: 0.4s;
+}
+.home-button:active, .home-button:hover {
+    background-color: burlywood;
+    transition-duration: 0.4s;
+}
+.recipe-name {
+    font-size: 5rem;
+    line-height: 7rem;
+}
+
+/* Footer */
+.footer {
+    margin: 3rem 0 3rem 0;
+}
+
+/* Main */
+.main-wrapper {
+    background: rgba(184, 184, 184, 0.3);
+    padding: 2vw;
+    border-radius: 1rem;
+    box-shadow: inset 0.5rem 0.5rem 1rem 0.01rem rgb(24, 23, 23);
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 0 0 2rem 0;
+}
+.main-image {
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.main-items {
+    background: azure;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.01rem rgb(24, 23, 23);
+}
+.main-items-container {
+    align-items: stretch;
+    gap: 2rem;
+}
+.main-heading {
+    font-size: 2rem;
+    color: rgb(63, 63, 63);
+}
+.main-item-details {
+    padding: 2rem;
+}
+.unordered-list li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 0.3rem 0;
+}
+.ordered-list li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+/* Media Query Starts Here */
+
+@media (max-width:1000px) {
+    .recipe-name {
+        font-size: 10vw;
+        line-height: 7rem;
+    }
+    .flex-row-center.main-wrapper {
+        flex-direction: column;
+    }
+    .sticky-container {
+        position:static;
+    }
+    .main-image {
+        width: 100%;
+        height: auto;
+    }
+}

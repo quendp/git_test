@@ -8,36 +8,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/recipe-style.css">
+    <link rel="stylesheet" href="../styles/recipe-style.css">
 </head>
 <body>
-    <h1>Beef Menudo</h1>
-    <div>
-        <div>
-            <img src="menudo.jpg" alt="beef menudo" width="500px" height="500px">
-            <h2>Description</h2>
-            <p>This dish depends on how much of each ingredient you put in it. It just depends on how much you wish to make. This dish takes a while to prepare and to cook but it is worth it. The spices are always according to how hot or spicy you like your food. It tastes better on the second day. If you want to make more, increase the ingredients. If you want less, decrease the ingredients. </p>
+    <div class="wrapper flex-column-center">
+        <header class="header flex-column-center">
+            <div class="header-menu flex-row-center">
+                <a href="adobo.html">
+                    <button class="menu-button nav-button">Previous Dish</button>
+                </a>
+                <a href="../index.html">
+                    <button class="menu-button home-button">Back to Homepage</button>
+                </a>
+                <a href="sinigang.html">
+                    <button class="menu-button nav-button">Next Dish</button>
+                </a>
+            </div>
+            <h1 class="recipe-name">Beef Menudo</h1>
+        </header>
+        <main>
+        <div class="flex-row-center main-wrapper">
+            <div class="main-items sticky-container">
+                <img class="main-image" src="menudo.jpg" alt="beef menudo" width="500px" height="500px">
+            </div>
+            <div class="main-items-container flex-column-center">
+                <div class="main-items">
+                    <h2 class="main-heading">Description</h2>
+                    <p class="main-item-details">This dish depends on how much of each ingredient you put in it. It just depends on how much you wish to make. This dish takes a while to prepare and to cook but it is worth it. The spices are always according to how hot or spicy you like your food. It tastes better on the second day. If you want to make more, increase the ingredients. If you want less, decrease the ingredients. 
+                    </p>
+                </div>
+                <div class="main-items">
+                    <h2 class="main-heading">Ingredients</h2>
+                    <ul class="main-item-details unordered-list">
+                        <li>2 pounds beef tripe</li>
+                        <li>2 onions, chopped</li>
+                        <li>4 (15 ounce) cans white hominy</li>
+                        <li>¼ teaspoon chili powder</li>
+                        <li>salt and pepper to taste</li>
+                    </ul>
+                </div>
+                <div class="main-items">
+                    <h2 class="main-heading">Directions</h2>
+                    <ol class="main-item-details ordered-list">
+                        <li>In a 16 quart pot combine the tripe and the onions. Add water until pot is about 3/4 full.</li>
+                        <li>Cover and cook on low heat for about 2 hours, or until the tripe is tender.</li>
+                        <li>Add the hominy, chili powder, and salt and pepper to taste.</li>
+                        <li>Cover and cook for another 45 minutes to one hour to incorporate the flavors.</li>
+                        <li>Serve with fresh onions, corn tortillas and lemon if desired.</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>2 pounds beef tripe</li>
-                <li>2 onions, chopped</li>
-                <li>4 (15 ounce) cans white hominy</li>
-                <li>¼ teaspoon chili powder</li>
-                <li>salt and pepper to taste</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Directions</h2>
-            <ol>
-                <li>In a 16 quart pot combine the tripe and the onions. Add water until pot is about 3/4 full.</li>
-                <li>Cover and cook on low heat for about 2 hours, or until the tripe is tender.</li>
-                <li>Add the hominy, chili powder, and salt and pepper to taste.</li>
-                <li>Cover and cook for another 45 minutes to one hour to incorporate the flavors.</li>
-                <li>Serve with fresh onions, corn tortillas and lemon if desired.</li>
-            </ol>
-        </div>
+        </main>
+        <footer class="flex-column-center">
+            <div class=" footer header-menu flex-row-center">
+                <a href="adobo.html">
+                    <button class="menu-button nav-button">Previous Dish</button>
+                </a>
+                <a href="../index.html">
+                    <button class="menu-button home-button">Back to Homepage</button>
+                </a>
+                <a href="sinigang.html">
+                    <button class="menu-button nav-button">Next Dish</button>
+                </a>
+            </div>
+            <p>
+                Copyright 2022 by quendp.
+            </p>
+        </footer>
     </div>
 </body>
 </html>

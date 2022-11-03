@@ -8,39 +8,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/recipe-style.css">
+    <link rel="stylesheet" href="../styles/recipe-style.css">
 </head>
 <body>
-    <h1>Pork Sinigang</h1>
-    <div>
-        <div>
-            <img src="sinigang.jpg" alt="pork sinigang">
-            <h2>Description</h2>
-            <p>Sinigang is a Filipino soup cooked with pork. Serve with rice and for additional sauce, use soy or fish sauce. If you want to, you can add what Filipinos call gabi gabi, which is a small taro root. When peeled they look like potatoes. You can add five to six of them when you add the water and make sure they are cooked through. Take them out when they are cooked because they can get too soft.</p>
+    <div class="wrapper flex-column-center">
+        <header class="header flex-column-center">
+            <div class="header-menu flex-row-center">
+                <a href="menudo.html">
+                    <button class="menu-button nav-button">Previous Dish</button>
+                </a>
+                <a href="../index.html">
+                    <button class="menu-button home-button">Back to Homepage</button>
+                </a>
+                <a href="adobo.html">
+                    <button class="menu-button nav-button">Next Dish</button>
+                </a>
+            </div>
+            <h1 class="recipe-name">Pork Sinigang</h1>
+        </header>
+        <main>
+        <div class="flex-row-center main-wrapper">
+            <div class="main-items sticky-container">
+                <img class="main-image" src="sinigang.jpg" alt="pork sinigang" width="500px" height="500px">
+            </div>
+            <div class="main-items-container flex-column-center">
+                <div class="main-items">
+                    <h2 class="main-heading">Description</h2>
+                    <p class="main-item-details">Sinigang is a Filipino soup cooked with pork. Serve with rice and for additional sauce, use soy or fish sauce. If you want to, you can add what Filipinos call gabi gabi, which is a small taro root. When peeled they look like potatoes. You can add five to six of them when you add the water and make sure they are cooked through. Take them out when they are cooked because they can get too soft.
+                    </p>
+                </div>
+                <div class="main-items">
+                    <h2 class="main-heading">Ingredients</h2>
+                    <ul class="main-item-details unordered-list">
+                        <li>1 tablespoon vegetable oil</li>
+                        <li>1 small onion, chopped</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 (1/2 inch) piece fresh ginger, chopped</li>
+                        <li>2 plum tomatoes, cut into 1/2-inch dice</li>
+                        <li>1 pound bone-in pork chops</li>
+                        <li>4 cups water, more if needed</li>
+                        <li>1 (1.41 ounce) package tamarind soup base (such as Knorr®)</li>
+                        <li>½ pound fresh green beans, trimmed</li>
+                    </ul>
+                </div>
+                <div class="main-items">
+                    <h2 class="main-heading">Directions</h2>
+                    <ol class="main-item-details ordered-list">
+                        <li>Heat vegetable oil in a skillet over medium heat. Add onion; cook and stir until softened and translucent, about 5 minutes. Season with salt </li>
+                        <li>Stir in ginger, tomatoes, and pork chops. Cover and reduce heat to medium-low. Turn the pork occasionally, until browned.</li>
+                        <li>Pour in water and tamarind soup base. Bring to a boil, then reduce heat and simmer until the pork is tender and cooked through, about 30 minutes.</li>
+                        <li>Stir in green beans and cook until tender.</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>1 tablespoon vegetable oil</li>
-                <li>1 small onion, chopped</li>
-                <li>1 teaspoon salt</li>
-                <li>1 (1/2 inch) piece fresh ginger, chopped</li>
-                <li>2 plum tomatoes, cut into 1/2-inch dice</li>
-                <li>1 pound bone-in pork chops</li>
-                <li>4 cups water, more if needed</li>
-                <li>1 (1.41 ounce) package tamarind soup base (such as Knorr®)</li>
-                <li>½ pound fresh green beans, trimmed</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Directions</h2>
-            <ol>
-                <li>Heat vegetable oil in a skillet over medium heat. Add onion; cook and stir until softened and translucent, about 5 minutes. Season with salt </li>
-                <li>Stir in ginger, tomatoes, and pork chops. Cover and reduce heat to medium-low. Turn the pork occasionally, until browned.</li>
-                <li>Pour in water and tamarind soup base. Bring to a boil, then reduce heat and simmer until the pork is tender and cooked through, about 30 minutes.</li>
-                <li>Stir in green beans and cook until tender.</li>
-            </ol>
-        </div>
-    </div>
+        </main>
+        <footer class="flex-column-center">
+            <div class=" footer header-menu flex-row-center">
+                <a href="menudo.html">
+                    <button class="menu-button nav-button">Previous Dish</button>
+                </a>
+                <a href="../index.html">
+                    <button class="menu-button home-button">Back to Homepage</button>
+                </a>
+                <a href="adobo.html">
+                    <button class="menu-button nav-button">Next Dish</button>
+                </a>
+            </div>
+            <p>
+                Copyright 2022 by quendp.
+            </p>
+        </footer>
+    </div> 
 </body>
 </html>
