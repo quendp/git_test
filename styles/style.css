@@ -72,6 +72,11 @@ body {
     object-fit: cover;
     border: 0.1rem solid rgba(39, 38, 38, 0.479);
     border-radius: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+.title {
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -104,7 +109,4 @@ body {
             line-height: 4rem;
             margin: 1rem;
         }
-    .title {
-        font-size: 1rem;
-    }
 }
