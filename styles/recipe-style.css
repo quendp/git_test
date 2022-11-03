@@ -73,6 +73,9 @@ body {
 .footer {
     margin: 3rem 0 3rem 0;
 }
+.copyright {
+    font-size: 0.7rem;
+}
 
 /* Main */
 .main-wrapper {
